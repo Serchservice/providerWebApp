@@ -11,22 +11,17 @@ export const flex = () => {
 
 export const flexColumn = (gap = vb.pad200, align = "start") => {
   return ` 
-     display: flex;
+     ${flex()};
      flex-direction: column;
      align-items: ${align};
-     justify-content: center;
-     gap: ${gap};
    `;
 };
 
 export const flexRow = (gap = vb.pad200, justify = "center") => {
   return `
-      display: flex;
+      ${flex()};
       flex-flow: row nowrap;
-      align-items: center;
       justify-content: ${justify};
-      gap: ${gap};
-    
     `;
 };
 
