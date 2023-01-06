@@ -52,7 +52,7 @@ For contributing to code, you will need
 4. Start the project on `localhost`
 
     ```console
-    $ npm stat
+    $ npm start
     ```
 
 #### Format check
