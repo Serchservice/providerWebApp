@@ -88,3 +88,7 @@ Join the amazing [Serch](#)
 
 This repository is under the [MIT](./LICENSE) license.
 
+## Our Frontend Collaborators
+![Instagram post - 1 (3)](https://user-images.githubusercontent.com/98127258/211153375-9fd36ea2-59d6-4aaa-b94b-491ff4104549.png)
+
+
