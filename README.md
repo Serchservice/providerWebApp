@@ -1,18 +1,21 @@
-
 # Serch Web provider app
 
-Join our amazing community Twitter.
+Serch is a startup company on the verge of creating the best technology for comfortability. All about Serch is embedded on the ideology of comfortability, because man cannot make money and end up not enjoying it all in a more comfortable manner.
 
-[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/serchservice)
+Therefore, Serch sells comfortability to the people, with added exclusivity, security and more wonderful features to speed up comfortable living. In all that, Serch still invests more on its user's experience and privacy.
+
+Join our amazing community.
+
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8gqJb9cdgH)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/serchservice))
 
 ## Website App overview
 
-This repository concerns the <strong> Serch web provider</strong>  [website](https://www.serchservice.com/).
+This repository concerns the <strong> Serch web provider</strong> [website](https://www.serchservice.com/).
 
 ## Want to contribute?
 
-Whether you are a ..., check out our 
-[code of conduct](#) and also the [contribution guidelines](#) for any missing steps.
+Whether you are a ..., check out our [code of conduct](docs/CODE_OF_CONDUCT.md) and also the [contribution guidelines](docs/CONTRIBUTING.md) for any missing steps.
 
 ### For Developers.
 
@@ -23,7 +26,6 @@ The code base of this repo uses
 - ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 - [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-
 For contributing to code, you will need
 
 - [Node](https://nodejs.org/en/) installed on your computer.
@@ -33,27 +35,27 @@ For contributing to code, you will need
 
 1. Clone the repo
 
-    ```console
-    $ git clone git@github.com:Serchservice/providerWebApp.git
-    ```
+   ```console
+   $ git clone git@github.com:Serchservice/providerWebApp.git
+   ```
 
 2. Navigate to the cloned directory
 
-    ```console
-    $ cd providerWebApp.
-    ```
+   ```console
+   $ cd providerWebApp.
+   ```
 
 3. Install dependencies
 
-    ```console
-    $ npm install
-    ```
+   ```console
+   $ npm install
+   ```
 
 4. Start the project on `localhost`
 
-    ```console
-    $ npm start
-    ```
+   ```console
+   $ npm start
+   ```
 
 #### Format check
 
@@ -77,18 +79,17 @@ $ npm run lint
 
 Done!
 
-
 ---
 
-Notice anything odd and/or missing from this README or on the website itself? Feel free to raise an [issue](https://github.com/FrancescoXX/4c-site/issues).
+Notice anything odd and/or missing from this README or on the website itself? Feel free to raise an [issue](https://github.com/Serchservice/providerWebApp/issues).
 
-Join the amazing [Serch](#)
+Join the amazing Serch Community.
 
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8gqJb9cdgH)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/serchservice))
 # License
 
 This repository is under the [MIT](./LICENSE) license.
 
 ## Our Frontend Collaborators
 ![Instagram post - 1 (3)](https://user-images.githubusercontent.com/98127258/211153375-9fd36ea2-59d6-4aaa-b94b-491ff4104549.png)
-
-
