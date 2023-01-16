@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Formik, Form, Field, useFormik } from "formik";
 import * as Yup from "yup";
@@ -6,8 +6,29 @@ import PasswordShowHide from "../components/PasswordShowHide";
 import viewIcon from "../assets/icons/password_view.svg";
 import { Link } from "react-router-dom";
 const Login = () => {
+  const [loading, setLoading] = useState(false);
+  const [formState, setFormState] = useState({
+    email: "",
+    password: "",
+  });
+  const [passwordState, setPasswordState] = useState("password");
+  const { email, password } = formState;
+  const handleOnChange = (e) => {
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+  };
+  const handleViewPassword = () => {
+    if (passwordState === "text") {
+      setPasswordState("password");
+    } else {
+      setPasswordState("text");
+    }
+  };
   return (
     <Wrapper>
+      <div className="bg-text">
+        <h1>Se</h1>
+      </div>
+
       <div className="serch__login-container">
         <div>
           <h1>Hi there,</h1>
@@ -21,7 +42,13 @@ const Login = () => {
               </label>
             </div>
             <div>
-              <input name="email" placeholder="Type here" type="email" />
+              <input
+                name="email"
+                placeholder="Type here"
+                type="email"
+                value={email}
+                onChange={handleOnChange}
+              />
             </div>
           </div>
           <div className="ps-box input-box">
@@ -30,13 +57,18 @@ const Login = () => {
                 password
               </label>
             </div>
-            <div>
+            <div className="password-box">
               <input
                 placeholder="Type your password here"
                 name="password"
-                type="password"
+                type={passwordState}
                 id="password"
+                value={password}
+                onChange={handleOnChange}
               />
+              <div className="view-icon" onClick={handleViewPassword}>
+                <img src={viewIcon} style={{ cursor: "pointer" }} alt="" />
+              </div>
             </div>
           </div>
 
@@ -60,6 +92,9 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <div className="bg-text">
+        <h1>rch</h1>
+      </div>
     </Wrapper>
   );
 };
@@ -67,15 +102,33 @@ const Login = () => {
 export default Login;
 
 const Wrapper = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  .bg-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 700px;
+    h1 {
+      font-family: "Inria Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 153px;
+
+      /* Light White */
+
+      color: #f0f0f0;
+    }
+  }
   .serch__login-container {
-    margin: 14px;
+    margin-top: 60px;
+    /* margin: 14px; */
     form {
       width: 943px;
-      height: 558px;
       left: 248px;
       top: 354px;
       background: #f0f0f0;
@@ -102,7 +155,7 @@ const Wrapper = styled.div`
         border: 2px solid #3b043b;
         border-radius: 10px;
         padding: 19px 29px 22px 29px;
-        width: 100%;
+        width: calc(100% - 56px);
       }
 
       input[type="checkbox"] {
@@ -115,10 +168,29 @@ const Wrapper = styled.div`
         border-radius: 5px;
         margin-right: 16px;
       }
+      .password-box {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .view-icon {
+          position: absolute;
+          height: calc(100% - 0.5rem);
+          bottom: 0;
+          right: 0.2rem;
+          width: 3rem;
+          border: none;
+          margin-left: -0.1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 40;
+        }
+      }
       .middle-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 62px;
         .remember {
           display: flex;
           align-items: center;
@@ -144,7 +216,7 @@ const Wrapper = styled.div`
           font-weight: 400;
           font-size: 28px;
           line-height: 34px;
-          /* identical to box height */
+          margin-right: 15px;
 
           color: rgba(124, 124, 124, 0.5);
         }
@@ -157,6 +229,22 @@ const Wrapper = styled.div`
           /* identical to box height */
 
           color: #6c0062;
+        }
+        button {
+          width: 200px;
+          height: 55px;
+          left: 941px;
+          top: 813px;
+          border: none;
+          background: #3f0f36;
+          box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 34px;
+          color: #ffffff;
         }
       }
     }
