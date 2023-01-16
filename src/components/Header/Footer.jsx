@@ -21,7 +21,10 @@ const Wrapper = styled.footer`
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 34px 10px;
+  padding: 34px 0;
+  @media screen and (max-width: 600px) {
+    padding: 34px 0px;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -34,5 +37,9 @@ const Wrapper = styled.footer`
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+      padding: 0;
+    }
   }
 `;

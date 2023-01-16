@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <Wrapper>
       <div className="bg-text">
-        <h1>Se</h1>
+        <h1 style={{ textAlign: "right" }}>Se</h1>
       </div>
 
       <div className="serch__login-container">
@@ -44,10 +44,10 @@ const Login = () => {
             <div>
               <input
                 name="email"
-                placeholder="Type here"
                 type="email"
                 value={email}
                 onChange={handleOnChange}
+                placeholder="joe@gmail.com"
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ const Login = () => {
             </div>
             <div className="password-box">
               <input
-                placeholder="Type your password here"
+                placeholder="******************"
                 name="password"
                 type={passwordState}
                 id="password"
@@ -92,6 +92,9 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <div className="bg-sm-text">
+        <h2>Serch</h2>
+      </div>
       <div className="bg-text">
         <h1>rch</h1>
       </div>
@@ -107,11 +110,28 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+
   .bg-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 700px;
+    flex: 0.5;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+    .bg-sm-text {
+      font-family: "Inria Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 77px;
+      /* identical to box height */
+
+      /* Light White */
+
+      color: #f0f0f0;
+    }
     h1 {
       font-family: "Inria Sans";
       font-style: normal;
@@ -127,8 +147,12 @@ const Wrapper = styled.div`
   .serch__login-container {
     margin-top: 60px;
     /* margin: 14px; */
+    flex: 3;
+    @media screen and (max-width: 900px) {
+      margin: 19px;
+    }
     form {
-      width: 943px;
+      /* width: 100%; */
       left: 248px;
       top: 354px;
       background: #f0f0f0;
@@ -136,6 +160,12 @@ const Wrapper = styled.div`
       border-radius: 10px;
       margin-top: 59px;
       padding: 62px 50px 54px 43px;
+      @media screen and (max-width: 900px) {
+        width: unset;
+        padding: 39px 15px;
+        margin-top: 39px;
+      }
+
       .input-box {
         margin-bottom: 28px;
       }
@@ -147,6 +177,10 @@ const Wrapper = styled.div`
         line-height: 29px;
         color: #030001;
         margin-bottom: 14px;
+        @media screen and (max-width: 600px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
       }
       .text-input {
         margin-bottom: 14px;
@@ -156,6 +190,18 @@ const Wrapper = styled.div`
         border-radius: 10px;
         padding: 19px 29px 22px 29px;
         width: calc(100% - 56px);
+        font-family: "Inria Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        min-width: 0;
+        @media screen and (max-width: 600px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        color: #b3b3b3;
       }
 
       input[type="checkbox"] {
@@ -167,6 +213,13 @@ const Wrapper = styled.div`
         border: 1px solid #000000;
         border-radius: 5px;
         margin-right: 16px;
+        @media screen and (max-width: 600px) {
+          margin-right: 7px;
+          border: 1px solid #000000;
+          border-radius: 5px;
+          width: 20px;
+          height: 20px;
+        }
       }
       .password-box {
         display: flex;
@@ -203,6 +256,10 @@ const Wrapper = styled.div`
           font-size: 24px;
           line-height: 29px;
           color: #000000;
+          @media screen and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+          }
         }
       }
       .below-box {
@@ -219,6 +276,11 @@ const Wrapper = styled.div`
           margin-right: 15px;
 
           color: rgba(124, 124, 124, 0.5);
+          @media screen and (max-width: 600px) {
+            font-size: 18px;
+            line-height: 22px;
+            margin-right: 7px;
+          }
         }
         a {
           font-family: "Inria Sans";
@@ -226,9 +288,12 @@ const Wrapper = styled.div`
           font-weight: 400;
           font-size: 24px;
           line-height: 29px;
-          /* identical to box height */
-
           color: #6c0062;
+
+          @media screen and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+          }
         }
         button {
           width: 200px;
@@ -245,6 +310,12 @@ const Wrapper = styled.div`
           font-size: 28px;
           line-height: 34px;
           color: #ffffff;
+          @media screen and (max-width: 600px) {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 6px 0px;
+            width: 120px;
+          }
         }
       }
     }
@@ -257,6 +328,10 @@ const Wrapper = styled.div`
     line-height: 48px;
 
     color: #000000;
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
   h2 {
     font-family: "Inria Sans";
@@ -267,6 +342,12 @@ const Wrapper = styled.div`
     text-align: left;
 
     /* Hint */
+
+    @media screen and (max-width: 600px) {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+    }
 
     color: #b3b3b3;
   }
