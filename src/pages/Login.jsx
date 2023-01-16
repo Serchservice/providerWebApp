@@ -128,6 +128,9 @@ const Wrapper = styled.div`
     bottom: 0;
     left: 0;
     z-index: -1;
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
     h2 {
       font-family: "Inria Sans";
       font-style: normal;
