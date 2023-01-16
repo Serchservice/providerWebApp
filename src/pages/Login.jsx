@@ -78,7 +78,7 @@ const Login = () => {
               <label htmlFor="rememberMe">Remember me</label>
             </div>
             <div>
-              <Link>Forgot Password ?</Link>
+              <Link className="forgot-password">Forgot Password ?</Link>
             </div>
           </div>
           <div className="below-box">
@@ -112,6 +112,14 @@ const Wrapper = styled.div`
   height: 100%;
   @media screen and (max-width: 900px) {
     height: 650px;
+  }
+  .forgot-password {
+    font-family: "Inria Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3f0f36;
   }
   .bg-text {
     display: flex;
