@@ -122,15 +122,25 @@ const Wrapper = styled.div`
     @media screen and (max-width: 900px) {
       display: none;
     }
+    h1 {
+      font-family: "Inria Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 153px;
+
+      /* Light White */
+
+      color: #f0f0f0;
+      z-index: -1;
+    }
   }
   .bg-sm-text {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: -1;
-    @media screen and (min-width: 900px) {
-      display: none;
-    }
+
     h2 {
       font-family: "Inria Sans";
       font-style: normal;
@@ -143,16 +153,9 @@ const Wrapper = styled.div`
 
       color: #f0f0f0;
     }
-    h1 {
-      font-family: "Inria Sans";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 128px;
-      line-height: 153px;
 
-      /* Light White */
-
-      color: #f0f0f0;
+    @media screen and (min-width: 900px) {
+      display: none;
     }
   }
   .serch__login-container {
