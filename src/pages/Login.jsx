@@ -32,7 +32,7 @@ const Login = () => {
       <div className="serch__login-container">
         <div>
           <h1>Hi there,</h1>
-          <h2>Good to have you back</h2>
+          <h2 className="sm-text">Good to have you back</h2>
         </div>
         <form>
           <div className="em-box input-box">
@@ -110,7 +110,9 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-
+  @media screen and (max-width: 900px) {
+    height: 650px;
+  }
   .bg-text {
     display: flex;
     flex-direction: column;
@@ -120,7 +122,13 @@ const Wrapper = styled.div`
     @media screen and (max-width: 900px) {
       display: none;
     }
-    .bg-sm-text {
+  }
+  .bg-sm-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    h2 {
       font-family: "Inria Sans";
       font-style: normal;
       font-weight: 700;
@@ -333,7 +341,7 @@ const Wrapper = styled.div`
       line-height: 38px;
     }
   }
-  h2 {
+  .sm-text {
     font-family: "Inria Sans";
     font-style: normal;
     font-weight: 700;
