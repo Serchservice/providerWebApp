@@ -5,16 +5,18 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <Header>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </BrowserRouter>
+    <>
+      <Header>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<h1>Home</h1>} />
+            <Route path="/about" element={<h1>About</h1>} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </BrowserRouter>
+      </Header>
       <Footer />
-    </Header>
+    </>
   );
 }
 

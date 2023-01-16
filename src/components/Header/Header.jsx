@@ -4,14 +4,14 @@ import logo from "../../assets/logo.png";
 
 function Header({ children }) {
   return (
-    <div>
+    <>
       <StyledHeader>
         <img src={logo} alt="logo" />
         <h1>service made easy</h1>
       </StyledHeader>
 
-      <div>{children}</div>
-    </div>
+      <StyledChild className="serch__navbar-children">{children}</StyledChild>
+    </>
   );
 }
 
@@ -35,4 +35,8 @@ const StyledHeader = styled.header`
 
     color: #f0f0f0;
   }
+`;
+const StyledChild = styled.div`
+  max-width: 1280px;
+  margin: auto;
 `;

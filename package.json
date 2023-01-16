@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
+    "formik": "^2.2.9",
     "framer-motion": "^8.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -20,7 +21,8 @@
     "react-spinners": "^0.13.7",
     "sass": "^1.57.1",
     "styled-components": "^5.3.6",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

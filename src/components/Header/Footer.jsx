@@ -16,10 +16,23 @@ const Footer = () => {
 
 export default Footer;
 
-const Wrapper = styled.div`
-
-
-ul{
+const Wrapper = styled.footer`
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 34px 10px;
+  ul {
     list-style: none;
-}
+    display: flex;
+    justify-content: space-around;
+  }
+  li {
+    color: #b3b3b3;
+    /* font-family: "Inter"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
